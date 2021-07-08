@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="darkGreen">#064e0a</color>
+
+    <color name="softOrange">#f5cc5a</color>
+    <color name="lightGreen">#8c8757</color>
+    <color name="mildWhite">#fefad7</color>
+    <color name="warmRed">#bf3d0b</color>
+    <color name="kindaBlack">#120D0C</color>
+    <color name="sparkGreen">#4CAF50</color>
+
+    <color name="colorPrimary">@color/softOrange</color>
+    <color name="colorPrimaryDark">@color/kindaBlack</color>
+    <color name="colorAccent">@color/warmRed</color>
+    <color name="colorLight">@color/mildWhite</color>
+    <color name="colorDiversity">@color/lightGreen</color>
+
+
+<!--    <color name="mtrl_textinput_default_box_stroke_color">@color/colorAccent</color>-->
+    <color name="mtrl_textinput_default_box_stroke_color">@color/colorAccent</color>
+</resources>

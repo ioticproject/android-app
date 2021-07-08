@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.project.iotic.ui.fragments.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.project.iotic.ui.fragments.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main"
+        >
+        <action
+            android:id="@+id/action_mainFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_devicesFragment"
+            app:destination="@id/devicesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_sensorsFragment"
+            app:destination="@id/sensorsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.project.iotic.ui.fragments.WelcomeFragment"
+        android:label="WelcomeFragment"
+        tools:layout="@layout/fragment_welcome"
+        >
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.project.iotic.ui.fragments.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register"
+        >
+        <action
+            android:id="@+id/action_registerFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.project.iotic.ui.fragments.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings"/>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.project.iotic.ui.fragments.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about"/>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.project.iotic.ui.fragments.StatisticsFragment"
+        android:label="StatisticsFragment"
+        tools:layout="@layout/fragment_statistics" />
+    <fragment
+        android:id="@+id/devicesFragment"
+        android:name="com.project.iotic.ui.fragments.DevicesFragment"
+        android:label="DevicesFragment" >
+        <action
+            android:id="@+id/action_devicesFragment_to_deviceFragment2"
+            app:destination="@id/deviceFragment" />
+        <action
+            android:id="@+id/action_devicesFragment_to_newDeviceFragment"
+            app:destination="@id/newDeviceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sensorsFragment"
+        android:name="com.project.iotic.ui.fragments.SensorsFragment"
+        android:label="SensorsFragment" >
+        <action
+            android:id="@+id/action_sensorsFragment_to_sensorFragment"
+            app:destination="@id/sensorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deviceFragment"
+        android:name="com.project.iotic.ui.fragments.DeviceFragment"
+        android:label="DeviceFragment" >
+        <action
+            android:id="@+id/action_deviceFragment_to_sensorFragment"
+            app:destination="@id/sensorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/GFragment"
+        android:name="com.project.iotic.ui.fragments.GFragment"
+        android:label="GFragment" />
+    <fragment
+        android:id="@+id/sensorFragment"
+        android:name="com.project.iotic.ui.fragments.SensorFragment"
+        android:label="SensorFragment" />
+    <fragment
+        android:id="@+id/newDeviceFragment"
+        android:name="com.project.iotic.ui.fragments.NewDeviceFragment"
+        android:label="NewDeviceFragment" />
+</navigation>
